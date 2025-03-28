@@ -1,0 +1,39 @@
+{
+  "name": "@dwisiswant0/delve-mcp",
+  "version": "0.1.0",
+  "description": "MCP server providing complete integration with Delve Go debugger, supporting all major debugging commands, program analysis, and execution control features",
+  "type": "module",
+  "bin": {
+    "delve-mcp": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwisiswant0/delve-mcp.git"
+  },
+  "keywords": [
+    "delve",
+    "mcp",
+    "debugger",
+    "go",
+    "modelcontextprotocol"
+  ],
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
+    "prepare": "npm run build",
+    "watch": "tsc --watch",
+    "inspector": "npx @modelcontextprotocol/inspector build/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  }
+}
