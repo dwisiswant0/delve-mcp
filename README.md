@@ -4,6 +4,10 @@ MCP server for Delve debugger integration
 
 This is a TypeScript-based MCP server that provides a complete interface to the Delve debugger for Go programs. It implements all major Delve commands and capabilities through MCP tools.
 
+<a href="https://glama.ai/mcp/servers/@dwisiswant0/delve-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@dwisiswant0/delve-mcp/badge" alt="Delve MCP server" />
+</a>
+
 ## Features
 
 ### Resources
